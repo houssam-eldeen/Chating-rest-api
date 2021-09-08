@@ -1,0 +1,171 @@
+2021-06-08 12:20:58 - Starting TodoApplication on EGID-HFadel with PID 10872 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-06-08 12:20:58 - No active profile set, falling back to default profiles: default
+2021-06-08 12:20:58 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30a1714a: startup date [Tue Jun 08 12:20:58 EEST 2021]; root of context hierarchy
+2021-06-08 12:20:59 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 12:20:59 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-08 12:20:59 - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.abolkog.springboot.tut.model.repository.TodoRepository.
+2021-06-08 12:20:59 - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.abolkog.springboot.tut.model.repository.UserRepository.
+2021-06-08 12:21:00 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd584ca4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 12:21:00 - Tomcat initialized with port(s): 8081 (http)
+2021-06-08 12:21:00 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-06-08 12:21:00 - Starting service [Tomcat]
+2021-06-08 12:21:00 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-06-08 12:21:00 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_25/bin/server;C:/Program Files/Java/jre1.8.0_25/bin;C:/Program Files/Java/jre1.8.0_25/lib/amd64;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\jet14.0-eval-amd64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_25\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;D:\Eclipse\java-resources\apache-maven-3.6.0\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Calibre2\;C:\Program Files\Dart\dart-sdk\bin;C:\Program Files\Dart\dart-sdk\lib;F:\Flutter\flutter_windows_1.22.5-stable\flutter\bin;C:\Users\hfadel\AppData\Local\Microsoft\WindowsApps;C:\Users\hfadel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hfadel\AppData\Roaming\npm;C:\Users\hfadel\.dotnet\tools;;D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\sts-bundle\sts-3.9.4.RELEASE;;.]
+2021-06-08 12:21:00 - Initializing Spring embedded WebApplicationContext
+2021-06-08 12:21:00 - Root WebApplicationContext: initialization completed in 2256 ms
+2021-06-08 12:21:01 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-06-08 12:21:01 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-06-08 12:21:01 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-06-08 12:21:01 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-06-08 12:21:01 - HHH000206: hibernate.properties not found
+2021-06-08 12:21:01 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-06-08 12:21:01 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-06-08 12:21:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-08 12:21:02 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-08 12:21:02 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-06-08 12:21:02 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-06-08 12:21:02 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-08 12:21:02 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-06-08 12:21:02 - Mapping filter: 'authFilter' to: [/*]
+2021-06-08 12:21:02 - Servlet dispatcherServlet mapped to [/]
+2021-06-08 12:21:03 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-08 12:21:03 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-06-08 12:21:03 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-06-08 12:21:03 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-06-08 12:21:03 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-06-08 12:21:03 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(java.lang.String)
+2021-06-08 12:21:03 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(java.lang.String)
+2021-06-08 12:21:03 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-06-08 12:21:03 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-06-08 12:21:03 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-06-08 12:21:03 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-08 12:21:03 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-08 12:21:03 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75900557, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d82d27d, org.springframework.security.web.header.HeaderWriterFilter@1fc29755, org.springframework.web.filter.CorsFilter@65f80773, org.springframework.security.web.authentication.logout.LogoutFilter@762af308, com.abolkog.springboot.tut.security.AuthFilter@5ba6b02b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b6dc45d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cb1dd58, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e87ef5c, org.springframework.security.web.session.SessionManagementFilter@5c15d116, org.springframework.security.web.access.ExceptionTranslationFilter@1b5cb342, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33220ff1]
+2021-06-08 12:21:03 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30a1714a: startup date [Tue Jun 08 12:20:58 EEST 2021]; root of context hierarchy
+2021-06-08 12:21:03 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-06-08 12:21:03 - LiveReload server is running on port 35729
+2021-06-08 12:21:03 - Registering beans for JMX exposure on startup
+2021-06-08 12:21:03 - Starting ProtocolHandler ["http-nio-8081"]
+2021-06-08 12:21:03 - Using a shared selector for servlet write/read
+2021-06-08 12:21:03 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-06-08 12:21:03 - Started TodoApplication in 5.494 seconds (JVM running for 6.493)
+2021-06-08 12:21:03 - HHH000397: Using ASTQueryTranslatorFactory
+2021-06-08 12:27:53 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-06-08 12:27:53 - FrameworkServlet 'dispatcherServlet': initialization started
+2021-06-08 12:27:53 - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2021-06-08 16:35:33 - Application shutdown requested.
+2021-06-08 16:35:33 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30a1714a: startup date [Tue Jun 08 12:20:58 EEST 2021]; root of context hierarchy
+2021-06-08 16:35:33 - Unregistering JMX-exposed beans on shutdown
+2021-06-08 16:35:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-08 16:35:44 - Starting TodoApplication on EGID-HFadel with PID 16952 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-06-08 16:35:44 - No active profile set, falling back to default profiles: default
+2021-06-08 16:35:44 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8642ac6: startup date [Tue Jun 08 16:35:44 EEST 2021]; root of context hierarchy
+2021-06-08 16:35:45 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fdb01c71] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 16:35:46 - Tomcat initialized with port(s): 8081 (http)
+2021-06-08 16:35:46 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-06-08 16:35:46 - Starting service [Tomcat]
+2021-06-08 16:35:46 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-06-08 16:35:46 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_25/bin/server;C:/Program Files/Java/jre1.8.0_25/bin;C:/Program Files/Java/jre1.8.0_25/lib/amd64;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\jet14.0-eval-amd64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_25\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;D:\Eclipse\java-resources\apache-maven-3.6.0\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Calibre2\;C:\Program Files\Dart\dart-sdk\bin;C:\Program Files\Dart\dart-sdk\lib;F:\Flutter\flutter_windows_1.22.5-stable\flutter\bin;C:\Users\hfadel\AppData\Local\Microsoft\WindowsApps;C:\Users\hfadel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hfadel\AppData\Roaming\npm;C:\Users\hfadel\.dotnet\tools;;D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\sts-bundle\sts-3.9.4.RELEASE;;.]
+2021-06-08 16:35:46 - Initializing Spring embedded WebApplicationContext
+2021-06-08 16:35:46 - Root WebApplicationContext: initialization completed in 1853 ms
+2021-06-08 16:35:46 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-06-08 16:35:46 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-06-08 16:35:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-06-08 16:35:46 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-06-08 16:35:46 - HHH000206: hibernate.properties not found
+2021-06-08 16:35:46 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-06-08 16:35:47 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-06-08 16:35:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-08 16:35:48 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-08 16:35:48 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-06-08 16:35:48 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-06-08 16:35:48 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-08 16:35:48 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-06-08 16:35:48 - Mapping filter: 'authFilter' to: [/*]
+2021-06-08 16:35:48 - Servlet dispatcherServlet mapped to [/]
+2021-06-08 16:35:48 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-08 16:35:48 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-06-08 16:35:48 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-06-08 16:35:48 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-06-08 16:35:48 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(java.lang.String)
+2021-06-08 16:35:48 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(java.lang.String)
+2021-06-08 16:35:48 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-06-08 16:35:48 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-06-08 16:35:48 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-06-08 16:35:48 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-06-08 16:35:48 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-08 16:35:48 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-08 16:35:48 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ba79bfb, org.springframework.security.web.context.SecurityContextPersistenceFilter@68e35db9, org.springframework.security.web.header.HeaderWriterFilter@4dbad342, org.springframework.web.filter.CorsFilter@9c1b153, org.springframework.security.web.authentication.logout.LogoutFilter@2d3ba5b1, com.abolkog.springboot.tut.security.AuthFilter@78c58485, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e469d8e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b474e0b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4106a10, org.springframework.security.web.session.SessionManagementFilter@475c3ec7, org.springframework.security.web.access.ExceptionTranslationFilter@63880216, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2fb2c899]
+2021-06-08 16:35:48 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8642ac6: startup date [Tue Jun 08 16:35:44 EEST 2021]; root of context hierarchy
+2021-06-08 16:35:48 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-06-08 16:35:49 - LiveReload server is running on port 35729
+2021-06-08 16:35:49 - Registering beans for JMX exposure on startup
+2021-06-08 16:35:49 - Starting ProtocolHandler ["http-nio-8081"]
+2021-06-08 16:35:49 - Using a shared selector for servlet write/read
+2021-06-08 16:35:49 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-06-08 16:35:49 - Started TodoApplication in 4.907 seconds (JVM running for 5.819)
+2021-06-08 16:35:49 - HHH000397: Using ASTQueryTranslatorFactory
+2021-06-08 16:40:10 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-06-08 16:40:10 - FrameworkServlet 'dispatcherServlet': initialization started
+2021-06-08 16:40:10 - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2021-06-08 17:02:27 - Application shutdown requested.
+2021-06-08 17:02:27 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8642ac6: startup date [Tue Jun 08 16:35:44 EEST 2021]; root of context hierarchy
+2021-06-08 17:02:27 - Unregistering JMX-exposed beans on shutdown
+2021-06-08 17:02:27 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-08 17:02:35 - Starting TodoApplication on EGID-HFadel with PID 27176 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-06-08 17:02:35 - No active profile set, falling back to default profiles: default
+2021-06-08 17:02:35 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@452b2fef: startup date [Tue Jun 08 17:02:35 EEST 2021]; root of context hierarchy
+2021-06-08 17:02:37 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3c13418] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-08 17:02:37 - Tomcat initialized with port(s): 8081 (http)
+2021-06-08 17:02:37 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-06-08 17:02:37 - Starting service [Tomcat]
+2021-06-08 17:02:37 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-06-08 17:02:37 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_25/bin/server;C:/Program Files/Java/jre1.8.0_25/bin;C:/Program Files/Java/jre1.8.0_25/lib/amd64;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\jet14.0-eval-amd64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_25\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;D:\Eclipse\java-resources\apache-maven-3.6.0\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Calibre2\;C:\Program Files\Dart\dart-sdk\bin;C:\Program Files\Dart\dart-sdk\lib;F:\Flutter\flutter_windows_1.22.5-stable\flutter\bin;C:\Users\hfadel\AppData\Local\Microsoft\WindowsApps;C:\Users\hfadel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hfadel\AppData\Roaming\npm;C:\Users\hfadel\.dotnet\tools;;D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\sts-bundle\sts-3.9.4.RELEASE;;.]
+2021-06-08 17:02:37 - Initializing Spring embedded WebApplicationContext
+2021-06-08 17:02:37 - Root WebApplicationContext: initialization completed in 1864 ms
+2021-06-08 17:02:38 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-06-08 17:02:38 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-06-08 17:02:38 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-06-08 17:02:38 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-06-08 17:02:38 - HHH000206: hibernate.properties not found
+2021-06-08 17:02:38 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-06-08 17:02:38 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-06-08 17:02:39 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-08 17:02:39 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-08 17:02:39 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-06-08 17:02:39 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-06-08 17:02:39 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-08 17:02:39 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-06-08 17:02:39 - Mapping filter: 'authFilter' to: [/*]
+2021-06-08 17:02:39 - Servlet dispatcherServlet mapped to [/]
+2021-06-08 17:02:39 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-08 17:02:39 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-06-08 17:02:39 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-06-08 17:02:39 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-06-08 17:02:39 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(java.lang.String)
+2021-06-08 17:02:39 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(java.lang.String)
+2021-06-08 17:02:39 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-06-08 17:02:39 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-06-08 17:02:39 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-06-08 17:02:39 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-06-08 17:02:39 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-08 17:02:39 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-08 17:02:39 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b7dc3d8, org.springframework.security.web.context.SecurityContextPersistenceFilter@78d1bd58, org.springframework.security.web.header.HeaderWriterFilter@1a5f1966, org.springframework.web.filter.CorsFilter@7df27ea6, org.springframework.security.web.authentication.logout.LogoutFilter@6e166655, com.abolkog.springboot.tut.security.AuthFilter@3a0b3092, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66be9c55, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43d2233e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a43b9d8, org.springframework.security.web.session.SessionManagementFilter@d7b356f, org.springframework.security.web.access.ExceptionTranslationFilter@bcdef81, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bdc87b4]
+2021-06-08 17:02:40 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@452b2fef: startup date [Tue Jun 08 17:02:35 EEST 2021]; root of context hierarchy
+2021-06-08 17:02:40 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-06-08 17:02:40 - LiveReload server is running on port 35729
+2021-06-08 17:02:40 - Registering beans for JMX exposure on startup
+2021-06-08 17:02:40 - Starting ProtocolHandler ["http-nio-8081"]
+2021-06-08 17:02:40 - Using a shared selector for servlet write/read
+2021-06-08 17:02:40 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-06-08 17:02:40 - Started TodoApplication in 4.866 seconds (JVM running for 5.961)
+2021-06-08 17:02:40 - HHH000397: Using ASTQueryTranslatorFactory
+2021-06-08 17:04:08 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-06-08 17:04:08 - FrameworkServlet 'dispatcherServlet': initialization started
+2021-06-08 17:04:08 - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms

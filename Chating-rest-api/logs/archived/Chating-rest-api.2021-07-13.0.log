@@ -1,0 +1,1173 @@
+2021-07-12 09:15:12 - Starting TodoApplication on EGID-HFadel with PID 27736 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-12 09:15:12 - No active profile set, falling back to default profiles: default
+2021-07-12 09:15:12 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f8e71fb: startup date [Mon Jul 12 09:15:12 EEST 2021]; root of context hierarchy
+2021-07-12 09:15:14 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$99aea345] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-12 09:15:14 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 09:15:14 - Tomcat initialized with port(s): 8081 (http)
+2021-07-12 09:15:14 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 09:15:14 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-07-12 09:15:14 - Starting service [Tomcat]
+2021-07-12 09:15:14 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-12 09:15:14 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 09:15:14 - Initializing Spring embedded WebApplicationContext
+2021-07-12 09:15:14 - Root WebApplicationContext: initialization completed in 2139 ms
+2021-07-12 09:15:15 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-12 09:15:15 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-12 09:15:15 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-12 09:15:15 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-07-12 09:15:15 - HHH000206: hibernate.properties not found
+2021-07-12 09:15:15 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-07-12 09:15:15 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-12 09:15:16 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-12 09:15:16 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-12 09:15:16 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-12 09:15:16 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-12 09:15:16 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-12 09:15:16 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-12 09:15:16 - Mapping filter: 'authFilter' to: [/*]
+2021-07-12 09:15:16 - Servlet dispatcherServlet mapped to [/]
+2021-07-12 09:15:17 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-12 09:15:17 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-12 09:15:17 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-12 09:15:17 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-12 09:15:17 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-12 09:15:17 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-12 09:15:17 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e58b0ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@71aef760, org.springframework.security.web.header.HeaderWriterFilter@617ab09b, org.springframework.security.web.authentication.logout.LogoutFilter@20e9ad73, com.abolkog.springboot.tut.security.AuthFilter@6459af89, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cff51bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ac825d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c3f33de, org.springframework.security.web.session.SessionManagementFilter@187b4976, org.springframework.security.web.access.ExceptionTranslationFilter@5c9463e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cbbc492]
+2021-07-12 09:15:17 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 09:15:17 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f8e71fb: startup date [Mon Jul 12 09:15:12 EEST 2021]; root of context hierarchy
+2021-07-12 09:15:17 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-12 09:15:17 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-12 09:15:17 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-12 09:15:17 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-12 09:15:17 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-12 09:15:17 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-12 09:15:17 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-12 09:15:17 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-12 09:15:17 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-12 09:15:17 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-12 09:15:17 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-12 09:15:17 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 09:15:17 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 09:15:17 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-12 09:15:18 - LiveReload server is running on port 35729
+2021-07-12 09:15:18 - Registering beans for JMX exposure on startup
+2021-07-12 09:15:18 - Starting beans in phase 2147483647
+2021-07-12 09:15:18 - Starting...
+2021-07-12 09:15:18 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-12 09:15:18 - Started.
+2021-07-12 09:15:18 - Starting ProtocolHandler ["http-nio-8081"]
+2021-07-12 09:15:18 - Using a shared selector for servlet write/read
+2021-07-12 09:15:18 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-07-12 09:15:18 - Started TodoApplication in 5.871 seconds (JVM running for 6.983)
+2021-07-12 09:15:18 - HHH000397: Using ASTQueryTranslatorFactory
+2021-07-12 09:16:17 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2021-07-12 09:43:17 - Application shutdown requested.
+2021-07-12 09:43:17 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f8e71fb: startup date [Mon Jul 12 09:15:12 EEST 2021]; root of context hierarchy
+2021-07-12 09:43:17 - Stopping beans in phase 2147483647
+2021-07-12 09:43:17 - Stopping...
+2021-07-12 09:43:17 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-12 09:43:17 - Stopped.
+2021-07-12 09:43:17 - Unregistering JMX-exposed beans on shutdown
+2021-07-12 09:43:17 - Shutting down ExecutorService 'brokerChannelExecutor'
+2021-07-12 09:43:17 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-07-12 09:43:17 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-07-12 09:43:17 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2021-07-12 09:43:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-12 09:43:25 - Starting TodoApplication on EGID-HFadel with PID 15248 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-12 09:43:25 - No active profile set, falling back to default profiles: default
+2021-07-12 09:43:25 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e3e1102: startup date [Mon Jul 12 09:43:25 EEST 2021]; root of context hierarchy
+2021-07-12 09:43:27 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$645e4495] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-12 09:43:27 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 09:43:27 - Tomcat initialized with port(s): 8081 (http)
+2021-07-12 09:43:27 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 09:43:27 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-07-12 09:43:27 - Starting service [Tomcat]
+2021-07-12 09:43:27 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-12 09:43:27 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 09:43:27 - Initializing Spring embedded WebApplicationContext
+2021-07-12 09:43:27 - Root WebApplicationContext: initialization completed in 2095 ms
+2021-07-12 09:43:28 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-12 09:43:28 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-12 09:43:28 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-12 09:43:28 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-07-12 09:43:28 - HHH000206: hibernate.properties not found
+2021-07-12 09:43:28 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-07-12 09:43:28 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-12 09:43:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-12 09:43:29 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-12 09:43:29 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-12 09:43:29 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-12 09:43:29 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-12 09:43:29 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-12 09:43:29 - Mapping filter: 'authFilter' to: [/*]
+2021-07-12 09:43:29 - Servlet dispatcherServlet mapped to [/]
+2021-07-12 09:43:30 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-12 09:43:30 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-12 09:43:30 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-12 09:43:30 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-12 09:43:30 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-12 09:43:30 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-12 09:43:30 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65bc9165, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e792096, org.springframework.security.web.header.HeaderWriterFilter@251035d3, org.springframework.security.web.authentication.logout.LogoutFilter@47232004, com.abolkog.springboot.tut.security.AuthFilter@153be233, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cc29a4b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4aac511b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c9b915f, org.springframework.security.web.session.SessionManagementFilter@2acf464a, org.springframework.security.web.access.ExceptionTranslationFilter@64001850, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@86c553]
+2021-07-12 09:43:30 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 09:43:30 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e3e1102: startup date [Mon Jul 12 09:43:25 EEST 2021]; root of context hierarchy
+2021-07-12 09:43:30 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-12 09:43:30 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-12 09:43:30 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-12 09:43:30 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-12 09:43:30 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-12 09:43:30 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-12 09:43:30 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-12 09:43:30 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-12 09:43:30 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-12 09:43:30 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-12 09:43:30 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-12 09:43:30 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 09:43:30 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 09:43:30 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-12 09:43:31 - LiveReload server is running on port 35729
+2021-07-12 09:43:31 - Registering beans for JMX exposure on startup
+2021-07-12 09:43:31 - Starting beans in phase 2147483647
+2021-07-12 09:43:31 - Starting...
+2021-07-12 09:43:31 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-12 09:43:31 - Started.
+2021-07-12 09:43:31 - Starting ProtocolHandler ["http-nio-8081"]
+2021-07-12 09:43:31 - Using a shared selector for servlet write/read
+2021-07-12 09:43:31 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-07-12 09:43:31 - Started TodoApplication in 5.575 seconds (JVM running for 6.507)
+2021-07-12 09:43:31 - HHH000397: Using ASTQueryTranslatorFactory
+2021-07-12 09:44:30 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2021-07-12 10:04:13 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 10:04:13 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-12 10:04:13 - FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-12 10:04:13 - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2021-07-12 10:04:27 - Expiration Date: Aug 11, 2021 10:04:27 AM
+2021-07-12 10:04:27 - token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbmcuaG91c3NhbUBob3RtYWlsLmNvbSIsImNyZWF0ZWQiOjE2MjYwNzM0Njc3MDQsImV4cCI6MTYyODY2NTQ2N30.C7h2uaF-NdG0Bpq309p20uxMqS9V7cRO_GqO3U_iL_0
+2021-07-12 10:14:30 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2021-07-12 10:44:30 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]
+2021-07-12 11:02:29 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e3e1102: startup date [Mon Jul 12 09:43:25 EEST 2021]; root of context hierarchy
+2021-07-12 11:02:29 - Stopping beans in phase 2147483647
+2021-07-12 11:02:29 - Stopping...
+2021-07-12 11:02:29 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-12 11:02:29 - Stopped.
+2021-07-12 11:02:29 - Unregistering JMX-exposed beans on shutdown
+2021-07-12 11:02:29 - Shutting down ExecutorService 'brokerChannelExecutor'
+2021-07-12 11:02:29 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-07-12 11:02:29 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-07-12 11:02:29 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2021-07-12 11:02:29 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-12 11:02:33 - Starting TodoApplication on EGID-HFadel with PID 3000 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-12 11:02:33 - No active profile set, falling back to default profiles: default
+2021-07-12 11:02:33 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4341b189: startup date [Mon Jul 12 11:02:33 EEST 2021]; root of context hierarchy
+2021-07-12 11:02:34 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$903c169e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-12 11:02:35 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:02:35 - Tomcat initialized with port(s): 8081 (http)
+2021-07-12 11:02:35 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:02:35 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-07-12 11:02:35 - Starting service [Tomcat]
+2021-07-12 11:02:35 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-12 11:02:35 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:02:35 - Initializing Spring embedded WebApplicationContext
+2021-07-12 11:02:35 - Root WebApplicationContext: initialization completed in 2129 ms
+2021-07-12 11:02:36 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-12 11:02:36 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-12 11:02:36 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-12 11:02:36 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-07-12 11:02:36 - HHH000206: hibernate.properties not found
+2021-07-12 11:02:36 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-07-12 11:02:36 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-12 11:02:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-12 11:02:37 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-12 11:02:37 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-12 11:02:37 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-12 11:02:37 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-12 11:02:37 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-12 11:02:37 - Mapping filter: 'authFilter' to: [/*]
+2021-07-12 11:02:37 - Servlet dispatcherServlet mapped to [/]
+2021-07-12 11:02:37 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-12 11:02:37 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-12 11:02:38 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-12 11:02:38 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-12 11:02:38 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-12 11:02:38 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-12 11:02:38 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@450b392d, org.springframework.security.web.context.SecurityContextPersistenceFilter@42b9e9fe, org.springframework.security.web.header.HeaderWriterFilter@7a49cfb1, org.springframework.security.web.authentication.logout.LogoutFilter@4400ee4c, com.abolkog.springboot.tut.security.AuthFilter@4e9300f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63131902, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48546575, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4847194e, org.springframework.security.web.session.SessionManagementFilter@1e22cba5, org.springframework.security.web.access.ExceptionTranslationFilter@53f2a320, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65e0abf0]
+2021-07-12 11:02:38 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 11:02:38 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4341b189: startup date [Mon Jul 12 11:02:33 EEST 2021]; root of context hierarchy
+2021-07-12 11:02:38 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-12 11:02:38 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-12 11:02:38 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-12 11:02:38 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-12 11:02:38 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-12 11:02:38 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-12 11:02:38 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-12 11:02:38 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-12 11:02:38 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-12 11:02:38 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-12 11:02:38 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-12 11:02:38 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 11:02:38 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 11:02:38 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-12 11:02:38 - Unable to start LiveReload server
+2021-07-12 11:02:38 - Registering beans for JMX exposure on startup
+2021-07-12 11:02:38 - Starting beans in phase 2147483647
+2021-07-12 11:02:38 - Starting...
+2021-07-12 11:02:38 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-12 11:02:38 - Started.
+2021-07-12 11:02:38 - Starting ProtocolHandler ["http-nio-8081"]
+2021-07-12 11:02:38 - Using a shared selector for servlet write/read
+2021-07-12 11:02:38 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-07-12 11:02:38 - Started TodoApplication in 5.688 seconds (JVM running for 6.81)
+2021-07-12 11:02:38 - HHH000397: Using ASTQueryTranslatorFactory
+2021-07-12 11:03:38 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2021-07-12 11:18:25 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4341b189: startup date [Mon Jul 12 11:02:33 EEST 2021]; root of context hierarchy
+2021-07-12 11:18:25 - Stopping beans in phase 2147483647
+2021-07-12 11:18:25 - Stopping...
+2021-07-12 11:18:25 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-12 11:18:25 - Stopped.
+2021-07-12 11:18:25 - Unregistering JMX-exposed beans on shutdown
+2021-07-12 11:18:25 - Shutting down ExecutorService 'brokerChannelExecutor'
+2021-07-12 11:18:25 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-07-12 11:18:25 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-07-12 11:18:25 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2021-07-12 11:18:25 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-12 11:18:25 - Starting TodoApplication on EGID-HFadel with PID 15248 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-12 11:18:25 - No active profile set, falling back to default profiles: default
+2021-07-12 11:18:25 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52468416: startup date [Mon Jul 12 11:18:25 EEST 2021]; root of context hierarchy
+2021-07-12 11:18:26 - Starting TodoApplication on EGID-HFadel with PID 3000 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-12 11:18:26 - No active profile set, falling back to default profiles: default
+2021-07-12 11:18:26 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@427b512d: startup date [Mon Jul 12 11:18:26 EEST 2021]; root of context hierarchy
+2021-07-12 11:18:26 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$903c169e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-12 11:18:26 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:18:26 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$645e4495] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-12 11:18:26 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:18:26 - Tomcat initialized with port(s): 8081 (http)
+2021-07-12 11:18:26 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:18:26 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-07-12 11:18:26 - Starting service [Tomcat]
+2021-07-12 11:18:26 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-12 11:18:26 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:18:27 - Initializing Spring embedded WebApplicationContext
+2021-07-12 11:18:27 - Root WebApplicationContext: initialization completed in 919 ms
+2021-07-12 11:18:27 - Tomcat initialized with port(s): 8081 (http)
+2021-07-12 11:18:27 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:18:27 - Starting service [Tomcat]
+2021-07-12 11:18:27 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-12 11:18:27 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:18:27 - Initializing Spring embedded WebApplicationContext
+2021-07-12 11:18:27 - Root WebApplicationContext: initialization completed in 1155 ms
+2021-07-12 11:18:27 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-12 11:18:27 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-12 11:18:27 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-12 11:18:27 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-12 11:18:27 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-12 11:18:27 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-12 11:18:27 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-12 11:18:27 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-12 11:18:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-12 11:18:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-12 11:18:27 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-12 11:18:27 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-12 11:18:27 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-12 11:18:27 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-12 11:18:27 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-12 11:18:27 - Mapping filter: 'authFilter' to: [/*]
+2021-07-12 11:18:27 - Servlet dispatcherServlet mapped to [/]
+2021-07-12 11:18:27 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-12 11:18:27 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-12 11:18:27 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-12 11:18:27 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-12 11:18:27 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-12 11:18:27 - Mapping filter: 'authFilter' to: [/*]
+2021-07-12 11:18:27 - Servlet dispatcherServlet mapped to [/]
+2021-07-12 11:18:27 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-12 11:18:27 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-12 11:18:27 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-12 11:18:27 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-12 11:18:27 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-12 11:18:27 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-12 11:18:27 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5cb33673, org.springframework.security.web.context.SecurityContextPersistenceFilter@7859814c, org.springframework.security.web.header.HeaderWriterFilter@7c6b8de5, org.springframework.security.web.authentication.logout.LogoutFilter@210c16ac, com.abolkog.springboot.tut.security.AuthFilter@3f8699b3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e640790, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ec0a91c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ed4388a, org.springframework.security.web.session.SessionManagementFilter@38c8ef7f, org.springframework.security.web.access.ExceptionTranslationFilter@42e89a65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3945174c]
+2021-07-12 11:18:27 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-12 11:18:27 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-12 11:18:27 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 11:18:27 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-12 11:18:27 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-12 11:18:27 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-12 11:18:27 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@427b512d: startup date [Mon Jul 12 11:18:26 EEST 2021]; root of context hierarchy
+2021-07-12 11:18:27 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-12 11:18:27 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-12 11:18:27 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-12 11:18:27 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-12 11:18:27 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-12 11:18:27 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-12 11:18:27 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-12 11:18:27 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-12 11:18:27 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-12 11:18:27 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-12 11:18:27 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-12 11:18:27 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-12 11:18:27 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 11:18:27 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@183f8d58, org.springframework.security.web.context.SecurityContextPersistenceFilter@26cd603a, org.springframework.security.web.header.HeaderWriterFilter@4a11676, org.springframework.security.web.authentication.logout.LogoutFilter@22e990dd, com.abolkog.springboot.tut.security.AuthFilter@13f21276, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ea54a0a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@623be30e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5567c179, org.springframework.security.web.session.SessionManagementFilter@9b92579, org.springframework.security.web.access.ExceptionTranslationFilter@5513b667, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33ab938b]
+2021-07-12 11:18:27 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 11:18:27 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-12 11:18:27 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 11:18:27 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52468416: startup date [Mon Jul 12 11:18:25 EEST 2021]; root of context hierarchy
+2021-07-12 11:18:27 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-12 11:18:27 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-12 11:18:27 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-12 11:18:27 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-12 11:18:27 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-12 11:18:27 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-12 11:18:27 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-12 11:18:27 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-12 11:18:27 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-12 11:18:27 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-12 11:18:27 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-12 11:18:27 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 11:18:27 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-12 11:18:27 - Unable to start LiveReload server
+2021-07-12 11:18:27 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-12 11:18:27 - Registering beans for JMX exposure on startup
+2021-07-12 11:18:27 - Starting beans in phase 2147483647
+2021-07-12 11:18:27 - Starting...
+2021-07-12 11:18:27 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-12 11:18:27 - Started.
+2021-07-12 11:18:27 - Starting ProtocolHandler ["http-nio-8081"]
+2021-07-12 11:18:27 - Using a shared selector for servlet write/read
+2021-07-12 11:18:27 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-07-12 11:18:27 - Started TodoApplication in 1.694 seconds (JVM running for 955.613)
+2021-07-12 11:18:27 - LiveReload server is running on port 35729
+2021-07-12 11:18:27 - Registering beans for JMX exposure on startup
+2021-07-12 11:18:27 - Starting beans in phase 2147483647
+2021-07-12 11:18:27 - Starting...
+2021-07-12 11:18:27 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-12 11:18:27 - Started.
+2021-07-12 11:18:27 - HHH000397: Using ASTQueryTranslatorFactory
+2021-07-12 11:18:27 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:18:27 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:18:27 - Failed to start connector [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8081]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.abolkog.springboot.tut.TodoApplication.main(TodoApplication.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.Net.bind(Net.java:428)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+2021-07-12 11:18:27 - Stopping service [Tomcat]
+2021-07-12 11:18:27 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-12 11:18:27 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+2021-07-12 11:18:27 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52468416: startup date [Mon Jul 12 11:18:25 EEST 2021]; root of context hierarchy
+2021-07-12 11:18:27 - Stopping beans in phase 2147483647
+2021-07-12 11:18:27 - Stopping...
+2021-07-12 11:18:27 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-12 11:18:27 - Stopped.
+2021-07-12 11:18:27 - Unregistering JMX-exposed beans on shutdown
+2021-07-12 11:18:27 - Condition evaluation unchanged
+2021-07-12 11:18:27 - Shutting down ExecutorService 'brokerChannelExecutor'
+2021-07-12 11:18:27 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-07-12 11:18:27 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-07-12 11:18:27 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2021-07-12 11:18:27 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-12 11:19:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2021-07-12 11:20:01 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-12 11:20:01 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-12 11:20:01 - FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-12 11:20:01 - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2021-07-12 11:20:02 - Initial SockJS "Info" request to server failed, url=ws://localhost:8081/stomp
+org.springframework.web.client.HttpClientErrorException: 403 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:94)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:79)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:766)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:724)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:698)
+	at org.springframework.web.socket.sockjs.client.RestTemplateXhrTransport.executeInfoRequestInternal(RestTemplateXhrTransport.java:137)
+	at org.springframework.web.socket.sockjs.client.AbstractXhrTransport.executeInfoRequest(AbstractXhrTransport.java:129)
+	at org.springframework.web.socket.sockjs.client.SockJsClient.getServerInfo(SockJsClient.java:296)
+	at org.springframework.web.socket.sockjs.client.SockJsClient.doHandshake(SockJsClient.java:262)
+	at org.springframework.web.socket.messaging.WebSocketStompClient.connect(WebSocketStompClient.java:274)
+	at org.springframework.web.socket.messaging.WebSocketStompClient.connect(WebSocketStompClient.java:255)
+	at org.springframework.web.socket.messaging.WebSocketStompClient.connect(WebSocketStompClient.java:235)
+	at org.springframework.web.socket.messaging.WebSocketStompClient.connect(WebSocketStompClient.java:219)
+	at tesing.WebsocketTesting.go1(WebsocketTesting.java:60)
+	at tesing.WebsocketTesting.main(WebsocketTesting.java:45)
+2021-07-12 11:49:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2021-07-12 11:59:10 - Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:428)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2021-07-12 12:19:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]
+2021-07-12 12:49:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 3]
+2021-07-12 13:19:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 5, active threads = 1, queued tasks = 0, completed tasks = 4]
+2021-07-12 13:49:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 6, active threads = 1, queued tasks = 0, completed tasks = 5]
+2021-07-12 14:19:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 7, active threads = 1, queued tasks = 0, completed tasks = 6]
+2021-07-12 14:49:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 7]
+2021-07-12 15:19:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 8]
+2021-07-12 15:49:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 9]
+2021-07-12 16:19:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 10]
+2021-07-12 16:49:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 11]
+2021-07-12 17:19:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 12]
+2021-07-12 17:49:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 13]
+2021-07-12 18:19:27 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 14]
+2021-07-12 18:49:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 15]
+2021-07-12 19:19:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 16]
+2021-07-12 19:49:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 17]
+2021-07-12 20:19:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 18]
+2021-07-12 20:49:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 19]
+2021-07-12 21:19:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 20]
+2021-07-12 21:49:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 21]
+2021-07-12 22:19:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 22]
+2021-07-12 22:49:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 23]
+2021-07-12 23:19:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 24]
+2021-07-12 23:49:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 25]
+2021-07-13 00:19:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 26]
+2021-07-13 00:49:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 27]
+2021-07-13 01:19:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 28]
+2021-07-13 01:49:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 29]
+2021-07-13 02:19:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 30]
+2021-07-13 02:49:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 31]
+2021-07-13 03:19:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 32]
+2021-07-13 03:49:28 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 33]
+2021-07-13 04:19:29 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 34]
+2021-07-13 04:49:29 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 35]
+2021-07-13 05:19:29 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 36]
+2021-07-13 05:49:29 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 37]
+2021-07-13 06:19:29 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 38]
+2021-07-13 06:49:29 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 39]
+2021-07-13 07:19:29 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 40]
+2021-07-13 07:49:29 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 41]
+2021-07-13 08:19:29 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 42]
+2021-07-13 08:24:23 - Application shutdown requested.
+2021-07-13 08:24:23 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@427b512d: startup date [Mon Jul 12 11:18:26 EEST 2021]; root of context hierarchy
+2021-07-13 08:24:24 - Stopping beans in phase 2147483647
+2021-07-13 08:24:24 - Stopping...
+2021-07-13 08:24:24 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 08:24:24 - Stopped.
+2021-07-13 08:24:24 - Unregistering JMX-exposed beans on shutdown
+2021-07-13 08:24:24 - Shutting down ExecutorService 'brokerChannelExecutor'
+2021-07-13 08:24:24 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-07-13 08:24:24 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-07-13 08:24:24 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2021-07-13 08:24:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:24:34 - Starting TodoApplication on EGID-HFadel with PID 15248 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-13 08:24:34 - No active profile set, falling back to default profiles: default
+2021-07-13 08:24:34 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@29748fc6: startup date [Tue Jul 13 08:24:34 EEST 2021]; root of context hierarchy
+2021-07-13 08:24:35 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$645e4495] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-13 08:24:35 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:24:35 - Tomcat initialized with port(s): 8081 (http)
+2021-07-13 08:24:35 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:24:35 - Starting service [Tomcat]
+2021-07-13 08:24:35 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-13 08:24:35 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:24:35 - Initializing Spring embedded WebApplicationContext
+2021-07-13 08:24:35 - Root WebApplicationContext: initialization completed in 1288 ms
+2021-07-13 08:24:35 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-13 08:24:35 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:24:35 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-13 08:24:35 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-13 08:24:35 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:24:35 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-13 08:24:35 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-13 08:24:35 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-13 08:24:35 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-13 08:24:35 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-13 08:24:35 - Mapping filter: 'authFilter' to: [/*]
+2021-07-13 08:24:35 - Servlet dispatcherServlet mapped to [/]
+2021-07-13 08:24:36 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-13 08:24:36 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-13 08:24:36 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-13 08:24:36 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-13 08:24:36 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-13 08:24:36 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-13 08:24:36 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22e2d2a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@21c3ae07, org.springframework.security.web.header.HeaderWriterFilter@2d34d1aa, org.springframework.security.web.authentication.logout.LogoutFilter@2ee3bf68, com.abolkog.springboot.tut.security.AuthFilter@50a96667, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ed1de5b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55e3fdaa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e01040e, org.springframework.security.web.session.SessionManagementFilter@71a15b4d, org.springframework.security.web.access.ExceptionTranslationFilter@4c66616d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72f20716]
+2021-07-13 08:24:36 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:24:36 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@29748fc6: startup date [Tue Jul 13 08:24:34 EEST 2021]; root of context hierarchy
+2021-07-13 08:24:36 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-13 08:24:36 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-13 08:24:36 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-13 08:24:36 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-13 08:24:36 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-13 08:24:36 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-13 08:24:36 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-13 08:24:36 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-13 08:24:36 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-13 08:24:36 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-13 08:24:36 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-13 08:24:36 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:24:36 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:24:36 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-13 08:24:36 - LiveReload server is running on port 35729
+2021-07-13 08:24:36 - Registering beans for JMX exposure on startup
+2021-07-13 08:24:36 - Starting beans in phase 2147483647
+2021-07-13 08:24:36 - Starting...
+2021-07-13 08:24:36 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 08:24:36 - Started.
+2021-07-13 08:24:36 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-07-13 08:24:36 - Started TodoApplication in 2.709 seconds (JVM running for 81669.924)
+2021-07-13 08:24:36 - HHH000397: Using ASTQueryTranslatorFactory
+2021-07-13 08:24:36 - Condition evaluation unchanged
+2021-07-13 08:24:38 - Starting TodoApplication on EGID-HFadel with PID 23500 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-13 08:24:38 - No active profile set, falling back to default profiles: default
+2021-07-13 08:24:38 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f4a285: startup date [Tue Jul 13 08:24:38 EEST 2021]; root of context hierarchy
+2021-07-13 08:24:39 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4c3b6421] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-13 08:24:40 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:24:40 - Tomcat initialized with port(s): 8081 (http)
+2021-07-13 08:24:40 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:24:40 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:24:40 - Starting service [Tomcat]
+2021-07-13 08:24:40 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-13 08:24:40 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:24:41 - Initializing Spring embedded WebApplicationContext
+2021-07-13 08:24:41 - Root WebApplicationContext: initialization completed in 2777 ms
+2021-07-13 08:24:41 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-13 08:24:41 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:24:41 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-13 08:24:42 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-07-13 08:24:42 - HHH000206: hibernate.properties not found
+2021-07-13 08:24:42 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-07-13 08:24:42 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-13 08:24:43 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:24:44 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-13 08:24:44 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-13 08:24:44 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-13 08:24:44 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-13 08:24:44 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-13 08:24:44 - Mapping filter: 'authFilter' to: [/*]
+2021-07-13 08:24:44 - Servlet dispatcherServlet mapped to [/]
+2021-07-13 08:24:44 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-13 08:24:44 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-13 08:24:44 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-13 08:24:44 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-13 08:24:44 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-13 08:24:44 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-13 08:24:45 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33803fe7, org.springframework.security.web.context.SecurityContextPersistenceFilter@7eab4dc, org.springframework.security.web.header.HeaderWriterFilter@56f772e2, org.springframework.security.web.authentication.logout.LogoutFilter@2ab12b0e, com.abolkog.springboot.tut.security.AuthFilter@682cbdd4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35151546, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4dafc063, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44b68115, org.springframework.security.web.session.SessionManagementFilter@2b315544, org.springframework.security.web.access.ExceptionTranslationFilter@207f2dc1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16bbfdd1]
+2021-07-13 08:24:45 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:24:45 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f4a285: startup date [Tue Jul 13 08:24:38 EEST 2021]; root of context hierarchy
+2021-07-13 08:24:45 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-13 08:24:45 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-13 08:24:45 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-13 08:24:45 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-13 08:24:45 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-13 08:24:45 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-13 08:24:45 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-13 08:24:45 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-13 08:24:45 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-13 08:24:45 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-13 08:24:45 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-13 08:24:45 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:24:45 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:24:45 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-13 08:24:45 - Unable to start LiveReload server
+2021-07-13 08:24:45 - Registering beans for JMX exposure on startup
+2021-07-13 08:24:45 - Starting beans in phase 2147483647
+2021-07-13 08:24:45 - Starting...
+2021-07-13 08:24:45 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 08:24:45 - Started.
+2021-07-13 08:24:45 - Starting ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:24:45 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:24:45 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:24:45 - Failed to start connector [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8081]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.abolkog.springboot.tut.TodoApplication.main(TodoApplication.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.Net.bind(Net.java:428)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+2021-07-13 08:24:45 - Pausing ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:24:45 - Stopping service [Tomcat]
+2021-07-13 08:24:45 - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2021-07-13 08:24:45 - Stopping ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:24:45 - Destroying ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:24:45 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-13 08:24:45 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+2021-07-13 08:24:45 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f4a285: startup date [Tue Jul 13 08:24:38 EEST 2021]; root of context hierarchy
+2021-07-13 08:24:45 - Stopping beans in phase 2147483647
+2021-07-13 08:24:45 - Stopping...
+2021-07-13 08:24:45 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 08:24:45 - Stopped.
+2021-07-13 08:24:45 - Unregistering JMX-exposed beans on shutdown
+2021-07-13 08:24:45 - Shutting down ExecutorService 'brokerChannelExecutor'
+2021-07-13 08:24:45 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-07-13 08:24:45 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-07-13 08:24:45 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2021-07-13 08:24:45 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:25:02 - Starting TodoApplication on EGID-HFadel with PID 7128 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-13 08:25:02 - No active profile set, falling back to default profiles: default
+2021-07-13 08:25:02 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19e3fc2: startup date [Tue Jul 13 08:25:02 EEST 2021]; root of context hierarchy
+2021-07-13 08:25:03 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7d54d941] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-13 08:25:03 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:25:04 - Tomcat initialized with port(s): 8081 (http)
+2021-07-13 08:25:04 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:25:04 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:25:04 - Starting service [Tomcat]
+2021-07-13 08:25:04 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-13 08:25:04 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:25:04 - Initializing Spring embedded WebApplicationContext
+2021-07-13 08:25:04 - Root WebApplicationContext: initialization completed in 1894 ms
+2021-07-13 08:25:04 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-13 08:25:04 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:25:04 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-13 08:25:04 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-07-13 08:25:04 - HHH000206: hibernate.properties not found
+2021-07-13 08:25:04 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-07-13 08:25:05 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-13 08:25:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:25:05 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-13 08:25:05 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-13 08:25:05 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-13 08:25:05 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-13 08:25:05 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-13 08:25:05 - Mapping filter: 'authFilter' to: [/*]
+2021-07-13 08:25:05 - Servlet dispatcherServlet mapped to [/]
+2021-07-13 08:25:06 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-13 08:25:06 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-13 08:25:06 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-13 08:25:06 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-13 08:25:06 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-13 08:25:06 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-13 08:25:06 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@433084bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@633af61, org.springframework.security.web.header.HeaderWriterFilter@2ebc58f5, org.springframework.security.web.authentication.logout.LogoutFilter@49b06380, com.abolkog.springboot.tut.security.AuthFilter@706094b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52d6bd56, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b63c9d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24bcf7d1, org.springframework.security.web.session.SessionManagementFilter@7299dd60, org.springframework.security.web.access.ExceptionTranslationFilter@75497f1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5255b971]
+2021-07-13 08:25:06 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:25:06 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19e3fc2: startup date [Tue Jul 13 08:25:02 EEST 2021]; root of context hierarchy
+2021-07-13 08:25:06 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-13 08:25:06 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-13 08:25:06 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-13 08:25:06 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-13 08:25:06 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-13 08:25:06 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-13 08:25:06 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-13 08:25:06 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-13 08:25:06 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-13 08:25:06 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-13 08:25:06 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-13 08:25:06 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:25:06 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:25:06 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-13 08:25:07 - Unable to start LiveReload server
+2021-07-13 08:25:07 - Registering beans for JMX exposure on startup
+2021-07-13 08:25:07 - Starting beans in phase 2147483647
+2021-07-13 08:25:07 - Starting...
+2021-07-13 08:25:07 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 08:25:07 - Started.
+2021-07-13 08:25:07 - Starting ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:25:07 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:25:07 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:25:07 - Failed to start connector [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8081]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.abolkog.springboot.tut.TodoApplication.main(TodoApplication.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.Net.bind(Net.java:428)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+2021-07-13 08:25:07 - Pausing ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:25:07 - Stopping service [Tomcat]
+2021-07-13 08:25:07 - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2021-07-13 08:25:07 - Stopping ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:25:07 - Destroying ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:25:07 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-13 08:25:07 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+2021-07-13 08:25:07 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19e3fc2: startup date [Tue Jul 13 08:25:02 EEST 2021]; root of context hierarchy
+2021-07-13 08:25:07 - Stopping beans in phase 2147483647
+2021-07-13 08:25:07 - Stopping...
+2021-07-13 08:25:07 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 08:25:07 - Stopped.
+2021-07-13 08:25:07 - Unregistering JMX-exposed beans on shutdown
+2021-07-13 08:25:07 - Shutting down ExecutorService 'brokerChannelExecutor'
+2021-07-13 08:25:07 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-07-13 08:25:07 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-07-13 08:25:07 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2021-07-13 08:25:07 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:25:36 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2021-07-13 08:28:25 - Starting TodoApplication on EGID-HFadel with PID 12624 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-13 08:28:25 - No active profile set, falling back to default profiles: default
+2021-07-13 08:28:25 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16f3258c: startup date [Tue Jul 13 08:28:25 EEST 2021]; root of context hierarchy
+2021-07-13 08:28:27 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ddf8bd13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-13 08:28:27 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:28:27 - Tomcat initialized with port(s): 8081 (http)
+2021-07-13 08:28:27 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:28:27 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:28:27 - Starting service [Tomcat]
+2021-07-13 08:28:27 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-13 08:28:27 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:28:27 - Initializing Spring embedded WebApplicationContext
+2021-07-13 08:28:27 - Root WebApplicationContext: initialization completed in 2007 ms
+2021-07-13 08:28:28 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-13 08:28:28 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:28:28 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-13 08:28:28 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-07-13 08:28:28 - HHH000206: hibernate.properties not found
+2021-07-13 08:28:28 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-07-13 08:28:28 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-13 08:28:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:28:29 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-13 08:28:29 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-13 08:28:29 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-13 08:28:29 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-13 08:28:29 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-13 08:28:29 - Mapping filter: 'authFilter' to: [/*]
+2021-07-13 08:28:29 - Servlet dispatcherServlet mapped to [/]
+2021-07-13 08:28:29 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-13 08:28:29 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-13 08:28:29 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-13 08:28:29 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-13 08:28:29 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-13 08:28:30 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-13 08:28:30 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ded9a68, org.springframework.security.web.context.SecurityContextPersistenceFilter@ed4dce2, org.springframework.security.web.header.HeaderWriterFilter@3db2645e, org.springframework.security.web.authentication.logout.LogoutFilter@fa48854, com.abolkog.springboot.tut.security.AuthFilter@7bdabde1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fecebbc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@576e30c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@655d2c6b, org.springframework.security.web.session.SessionManagementFilter@7531dcda, org.springframework.security.web.access.ExceptionTranslationFilter@1807fadd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2bf47f86]
+2021-07-13 08:28:30 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:28:30 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16f3258c: startup date [Tue Jul 13 08:28:25 EEST 2021]; root of context hierarchy
+2021-07-13 08:28:30 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-13 08:28:30 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-13 08:28:30 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-13 08:28:30 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-13 08:28:30 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-13 08:28:30 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-13 08:28:30 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-13 08:28:30 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-13 08:28:30 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-13 08:28:30 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-13 08:28:30 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-13 08:28:30 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:28:30 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:28:30 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-13 08:28:30 - LiveReload server is running on port 35729
+2021-07-13 08:28:30 - Registering beans for JMX exposure on startup
+2021-07-13 08:28:30 - Starting beans in phase 2147483647
+2021-07-13 08:28:30 - Starting...
+2021-07-13 08:28:30 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 08:28:30 - Started.
+2021-07-13 08:28:30 - Starting ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:28:30 - Using a shared selector for servlet write/read
+2021-07-13 08:28:30 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-07-13 08:28:30 - Started TodoApplication in 5.251 seconds (JVM running for 6.124)
+2021-07-13 08:28:30 - HHH000397: Using ASTQueryTranslatorFactory
+2021-07-13 08:29:29 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2021-07-13 08:33:30 - Application shutdown requested.
+2021-07-13 08:33:30 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16f3258c: startup date [Tue Jul 13 08:28:25 EEST 2021]; root of context hierarchy
+2021-07-13 08:33:30 - Stopping beans in phase 2147483647
+2021-07-13 08:33:30 - Stopping...
+2021-07-13 08:33:30 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 08:33:30 - Stopped.
+2021-07-13 08:33:30 - Unregistering JMX-exposed beans on shutdown
+2021-07-13 08:33:30 - Shutting down ExecutorService 'brokerChannelExecutor'
+2021-07-13 08:33:30 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-07-13 08:33:30 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-07-13 08:33:30 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2021-07-13 08:33:30 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:37:30 - Starting TodoApplication on EGID-HFadel with PID 28788 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-13 08:37:30 - No active profile set, falling back to default profiles: default
+2021-07-13 08:37:30 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15406dbc: startup date [Tue Jul 13 08:37:30 EEST 2021]; root of context hierarchy
+2021-07-13 08:37:32 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a7097d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-13 08:37:32 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:37:32 - Tomcat initialized with port(s): 8081 (http)
+2021-07-13 08:37:32 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:37:32 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:37:32 - Starting service [Tomcat]
+2021-07-13 08:37:32 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-13 08:37:32 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:37:33 - Initializing Spring embedded WebApplicationContext
+2021-07-13 08:37:33 - Root WebApplicationContext: initialization completed in 2307 ms
+2021-07-13 08:37:33 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-13 08:37:33 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:37:33 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-13 08:37:33 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-07-13 08:37:33 - HHH000206: hibernate.properties not found
+2021-07-13 08:37:33 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-07-13 08:37:34 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-13 08:37:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 08:37:34 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-13 08:37:34 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-13 08:37:34 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-13 08:37:34 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-13 08:37:34 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-13 08:37:34 - Mapping filter: 'authFilter' to: [/*]
+2021-07-13 08:37:34 - Servlet dispatcherServlet mapped to [/]
+2021-07-13 08:37:35 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-13 08:37:35 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-13 08:37:35 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-13 08:37:35 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-13 08:37:35 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-13 08:37:35 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-13 08:37:35 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a881d41, org.springframework.security.web.context.SecurityContextPersistenceFilter@13aaef14, org.springframework.security.web.header.HeaderWriterFilter@250884bb, org.springframework.security.web.authentication.logout.LogoutFilter@24a4ed50, com.abolkog.springboot.tut.security.AuthFilter@5b173e46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@135c2004, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3998cc36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60d5c936, org.springframework.security.web.session.SessionManagementFilter@3474afff, org.springframework.security.web.access.ExceptionTranslationFilter@8484ad1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2280d0ba]
+2021-07-13 08:37:35 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:37:35 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15406dbc: startup date [Tue Jul 13 08:37:30 EEST 2021]; root of context hierarchy
+2021-07-13 08:37:35 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-13 08:37:35 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-13 08:37:35 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-13 08:37:35 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-13 08:37:35 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-13 08:37:35 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-13 08:37:35 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-13 08:37:35 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-13 08:37:35 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-13 08:37:35 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-13 08:37:35 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-13 08:37:35 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:37:35 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 08:37:35 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-13 08:37:36 - LiveReload server is running on port 35729
+2021-07-13 08:37:36 - Registering beans for JMX exposure on startup
+2021-07-13 08:37:36 - Starting beans in phase 2147483647
+2021-07-13 08:37:36 - Starting...
+2021-07-13 08:37:36 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 08:37:36 - Started.
+2021-07-13 08:37:36 - Starting ProtocolHandler ["http-nio-8081"]
+2021-07-13 08:37:36 - Using a shared selector for servlet write/read
+2021-07-13 08:37:36 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-07-13 08:37:36 - Started TodoApplication in 5.885 seconds (JVM running for 6.85)
+2021-07-13 08:37:36 - HHH000397: Using ASTQueryTranslatorFactory
+2021-07-13 08:37:55 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 08:37:55 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-13 08:37:55 - FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-13 08:37:55 - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2021-07-13 08:38:35 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2021-07-13 09:08:35 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2021-07-13 09:38:35 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]
+2021-07-13 10:08:35 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 3]
+2021-07-13 10:32:55 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:33:01 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:34:45 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:38:35 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 5, active threads = 1, queued tasks = 0, completed tasks = 4]
+2021-07-13 10:38:37 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:38:43 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:45:27 - Application shutdown requested.
+2021-07-13 10:45:27 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15406dbc: startup date [Tue Jul 13 08:37:30 EEST 2021]; root of context hierarchy
+2021-07-13 10:45:27 - Stopping beans in phase 2147483647
+2021-07-13 10:45:27 - Stopping...
+2021-07-13 10:45:27 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 10:45:27 - Stopped.
+2021-07-13 10:45:27 - Unregistering JMX-exposed beans on shutdown
+2021-07-13 10:45:27 - Shutting down ExecutorService 'brokerChannelExecutor'
+2021-07-13 10:45:27 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-07-13 10:45:27 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-07-13 10:45:27 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2021-07-13 10:45:27 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 10:45:34 - Starting TodoApplication on EGID-HFadel with PID 29140 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-13 10:45:34 - No active profile set, falling back to default profiles: default
+2021-07-13 10:45:34 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40f5456f: startup date [Tue Jul 13 10:45:34 EEST 2021]; root of context hierarchy
+2021-07-13 10:45:36 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f459445e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-13 10:45:36 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:45:36 - Tomcat initialized with port(s): 8081 (http)
+2021-07-13 10:45:36 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:45:36 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-07-13 10:45:36 - Starting service [Tomcat]
+2021-07-13 10:45:36 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-13 10:45:36 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:45:36 - Initializing Spring embedded WebApplicationContext
+2021-07-13 10:45:36 - Root WebApplicationContext: initialization completed in 2203 ms
+2021-07-13 10:45:37 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-13 10:45:37 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-13 10:45:37 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-13 10:45:37 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-07-13 10:45:37 - HHH000206: hibernate.properties not found
+2021-07-13 10:45:37 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-07-13 10:45:38 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-13 10:45:38 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 10:45:39 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-13 10:45:39 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-13 10:45:39 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-13 10:45:39 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-13 10:45:39 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-13 10:45:39 - Mapping filter: 'authFilter' to: [/*]
+2021-07-13 10:45:39 - Servlet dispatcherServlet mapped to [/]
+2021-07-13 10:45:39 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-13 10:45:39 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-13 10:45:39 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-13 10:45:39 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-13 10:45:39 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-13 10:45:39 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-13 10:45:39 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77712fcd, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d128c1f, org.springframework.security.web.header.HeaderWriterFilter@6708e848, org.springframework.security.web.authentication.logout.LogoutFilter@1047ac07, com.abolkog.springboot.tut.security.AuthFilter@3f739161, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@286373fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a5f1993, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2809525c, org.springframework.security.web.session.SessionManagementFilter@38ad95eb, org.springframework.security.web.access.ExceptionTranslationFilter@4c5c90aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6514b86]
+2021-07-13 10:45:40 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 10:45:40 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40f5456f: startup date [Tue Jul 13 10:45:34 EEST 2021]; root of context hierarchy
+2021-07-13 10:45:40 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-13 10:45:40 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-13 10:45:40 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-13 10:45:40 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-13 10:45:40 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-13 10:45:40 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-13 10:45:40 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-13 10:45:40 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-13 10:45:40 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-13 10:45:40 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-13 10:45:40 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-13 10:45:40 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 10:45:40 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 10:45:40 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-13 10:45:40 - Adding welcome page: class path resource [static/index.html]
+2021-07-13 10:45:40 - LiveReload server is running on port 35729
+2021-07-13 10:45:40 - Registering beans for JMX exposure on startup
+2021-07-13 10:45:40 - Starting beans in phase 2147483647
+2021-07-13 10:45:40 - Starting...
+2021-07-13 10:45:40 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 10:45:40 - Started.
+2021-07-13 10:45:40 - Starting ProtocolHandler ["http-nio-8081"]
+2021-07-13 10:45:40 - Using a shared selector for servlet write/read
+2021-07-13 10:45:40 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-07-13 10:45:40 - Started TodoApplication in 6.425 seconds (JVM running for 7.361)
+2021-07-13 10:45:40 - HHH000397: Using ASTQueryTranslatorFactory
+2021-07-13 10:45:41 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:45:41 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:45:41 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-13 10:45:41 - FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-13 10:45:41 - FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+2021-07-13 10:46:39 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2021-07-13 10:47:25 - Application shutdown requested.
+2021-07-13 10:47:25 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40f5456f: startup date [Tue Jul 13 10:45:34 EEST 2021]; root of context hierarchy
+2021-07-13 10:47:25 - Stopping beans in phase 2147483647
+2021-07-13 10:47:25 - Stopping...
+2021-07-13 10:47:25 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 10:47:25 - Stopped.
+2021-07-13 10:47:25 - Unregistering JMX-exposed beans on shutdown
+2021-07-13 10:47:25 - Shutting down ExecutorService 'brokerChannelExecutor'
+2021-07-13 10:47:25 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-07-13 10:47:25 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-07-13 10:47:25 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2021-07-13 10:47:25 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 10:47:40 - Starting TodoApplication on EGID-HFadel with PID 29344 (started by hfadel in D:\Eclipse\7.spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\02.Workspace\Spring Json Projects\Chating-rest-api)
+2021-07-13 10:47:40 - No active profile set, falling back to default profiles: default
+2021-07-13 10:47:40 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31aa27f3: startup date [Tue Jul 13 10:47:40 EEST 2021]; root of context hierarchy
+2021-07-13 10:47:42 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$504b0e1d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-13 10:47:42 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:47:42 - Tomcat initialized with port(s): 8081 (http)
+2021-07-13 10:47:42 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:47:42 - Initializing ProtocolHandler ["http-nio-8081"]
+2021-07-13 10:47:42 - Starting service [Tomcat]
+2021-07-13 10:47:42 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2021-07-13 10:47:42 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:47:43 - Initializing Spring embedded WebApplicationContext
+2021-07-13 10:47:43 - Root WebApplicationContext: initialization completed in 2358 ms
+2021-07-13 10:47:43 - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-07-13 10:47:43 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-13 10:47:43 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-13 10:47:43 - HHH000412: Hibernate Core {5.2.17.Final}
+2021-07-13 10:47:43 - HHH000206: hibernate.properties not found
+2021-07-13 10:47:43 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-07-13 10:47:44 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-07-13 10:47:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-13 10:47:45 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-13 10:47:45 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-13 10:47:45 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-13 10:47:45 - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-13 10:47:45 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-13 10:47:45 - Mapping filter: 'authFilter' to: [/*]
+2021-07-13 10:47:45 - Servlet dispatcherServlet mapped to [/]
+2021-07-13 10:47:45 - Initializing ExecutorService  'clientInboundChannelExecutor'
+2021-07-13 10:47:45 - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2021-07-13 10:47:45 - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2021-07-13 10:47:45 - Mapped URL path [/stomp/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2021-07-13 10:47:45 - Initializing ExecutorService  'brokerChannelExecutor'
+2021-07-13 10:47:45 - Mapped "{[/broadcast],messageType=[MESSAGE]}" onto public com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.send(com.abolkog.springboot.tut.messagingstompwebsocket.ChatMessage) throws java.lang.Exception
+2021-07-13 10:47:45 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76b1fb5, org.springframework.security.web.context.SecurityContextPersistenceFilter@26f3a1d4, org.springframework.security.web.header.HeaderWriterFilter@3fff0791, org.springframework.security.web.authentication.logout.LogoutFilter@dca1769, com.abolkog.springboot.tut.security.AuthFilter@2fc86fb0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bd3e46e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69a08fda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19c6e5cb, org.springframework.security.web.session.SessionManagementFilter@26ae580a, org.springframework.security.web.access.ExceptionTranslationFilter@4cd1f0fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b190986]
+2021-07-13 10:47:45 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 10:47:46 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31aa27f3: startup date [Tue Jul 13 10:47:40 EEST 2021]; root of context hierarchy
+2021-07-13 10:47:46 - Mapped "{[/api/v1/data || /api/v1/data/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.chat.Chart> com.abolkog.springboot.tut.chat.DataController.getAllTodos()
+2021-07-13 10:47:46 - Mapped "{[/{name}],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greetingWithName(java.lang.String)
+2021-07-13 10:47:46 - Mapped "{[/]}" onto public java.lang.String com.abolkog.springboot.tut.home.HomeController.greeting()
+2021-07-13 10:47:46 - Mapped "{[/stomp-broadcast],methods=[GET]}" onto public java.lang.String com.abolkog.springboot.tut.messagingstompwebsocket.GreetingController.getWebSocketBroadcast()
+2021-07-13 10:47:46 - Mapped "{[/api/v1/auth || /api/v1/auth/],methods=[POST]}" onto public com.abolkog.springboot.tut.security.JwtResponse com.abolkog.springboot.tut.security.AuthController.signIn(com.abolkog.springboot.tut.security.SignInRequest)
+2021-07-13 10:47:46 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.abolkog.springboot.tut.model.entity.Todo>> com.abolkog.springboot.tut.todos.TodoController.getAllTodos()
+2021-07-13 10:47:46 - Mapped "{[/api/v1/todos || /api/v1/todos/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.createNewTodo(com.abolkog.springboot.tut.model.entity.Todo)
+2021-07-13 10:47:46 - Mapped "{[/api/v1/todos/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.abolkog.springboot.tut.todos.TodoController.deleteTodo(int)
+2021-07-13 10:47:46 - Mapped "{[/api/v1/todos/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.abolkog.springboot.tut.model.entity.Todo> com.abolkog.springboot.tut.todos.TodoController.getTodoById(int)
+2021-07-13 10:47:46 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-13 10:47:46 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-13 10:47:46 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 10:47:46 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-13 10:47:46 - Detected @ExceptionHandler methods in apiExceptionsHandler
+2021-07-13 10:47:46 - Adding welcome page: class path resource [static/index.html]
+2021-07-13 10:47:46 - LiveReload server is running on port 35729
+2021-07-13 10:47:46 - Registering beans for JMX exposure on startup
+2021-07-13 10:47:46 - Starting beans in phase 2147483647
+2021-07-13 10:47:46 - Starting...
+2021-07-13 10:47:46 - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 10:47:46 - Started.
+2021-07-13 10:47:46 - Starting ProtocolHandler ["http-nio-8081"]
+2021-07-13 10:47:46 - Using a shared selector for servlet write/read
+2021-07-13 10:47:46 - Tomcat started on port(s): 8081 (http) with context path ''
+2021-07-13 10:47:46 - Started TodoApplication in 6.143 seconds (JVM running for 7.274)
+2021-07-13 10:47:46 - HHH000397: Using ASTQueryTranslatorFactory
+2021-07-13 10:47:46 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:47:46 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-13 10:47:46 - FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-13 10:47:46 - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2021-07-13 10:47:47 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:47:47 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:48:45 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2021-07-13 10:51:11 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:56:23 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 10:56:23 - An incompatible version [1.1.32] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2021-07-13 11:18:45 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2021-07-13 11:48:45 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]
+2021-07-13 12:18:45 - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 3]
+2021-07-13 12:35:01 - Application shutdown requested.
+2021-07-13 12:35:01 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31aa27f3: startup date [Tue Jul 13 10:47:40 EEST 2021]; root of context hierarchy
+2021-07-13 12:35:01 - Stopping beans in phase 2147483647
+2021-07-13 12:35:01 - Stopping...
+2021-07-13 12:35:01 - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2021-07-13 12:35:01 - Stopped.
+2021-07-13 12:35:01 - Unregistering JMX-exposed beans on shutdown
+2021-07-13 12:35:01 - Shutting down ExecutorService 'brokerChannelExecutor'
+2021-07-13 12:35:01 - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-07-13 12:35:01 - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-07-13 12:35:01 - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2021-07-13 12:35:01 - Closing JPA EntityManagerFactory for persistence unit 'default'
