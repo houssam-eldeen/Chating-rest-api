@@ -31,30 +31,31 @@ import java.util.regex.Pattern;
  * @Created 08/10/2018 9:20 PM.
  */
 @Service
-public class UserService implements UserDetailsService {
+public class UserService implements UserDetailsService
+{
 
-    private final Log log = LogFactory.getLog(UserDetailsService.class);
-    
+    private final Log logger = LogFactory.getLog(UserDetailsService.class);
+
     @Autowired
     private UserRepository userRepository;
 
-    
-    
     @Bean
-    private BCryptPasswordEncoder passwordEncoder() {
-        
+    private BCryptPasswordEncoder passwordEncoder()
+    {
+
         BCryptPasswordEncoder passwordEncoder1 = new BCryptPasswordEncoder();
-        
-//        PasswordEncoder passwordEncoder2 = PasswordEncoderFactories.createDelegatingPasswordEncoder();
-        
+
+        // PasswordEncoder passwordEncoder2 = PasswordEncoderFactories.createDelegatingPasswordEncoder();
+
         return passwordEncoder1;
-        
+
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        
-//        return new AppUser("khalid@abolkog.com",passwordEncoder().encode("password"), AuthorityUtils.NO_AUTHORITIES);
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException
+    {
+
+        // return new AppUser("khalid@abolkog.com",passwordEncoder().encode("password"), AuthorityUtils.NO_AUTHORITIES);
         AppUser user = userRepository.findByEmail(username);
         if (user == null) {
             throw new NotFoundException("User not found");
@@ -63,34 +64,31 @@ public class UserService implements UserDetailsService {
         return user;
     }
 
-    public void save(AppUser user) {
-       
+    
+
+    public void save(AppUser user)
+    {
+
         String hashed = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt());
-        
+
         String hashed2 = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt(12));
-        
+
         if (BCrypt.checkpw(user.getPassword(), hashed)) {
-            
             System.out.println("It matches");
-            log.info("It matches");
-        
-        }else if (BCrypt.checkpw(user.getPassword(), hashed2)) {
-            
+
+        } else if (BCrypt.checkpw(user.getPassword(), hashed2)) {
             System.out.println("It matches2");
-            log.info("It matches2");
-            
-        }else {
-            
+        } else {
             System.out.println("It does not match");
-            log.info("It does not match");
         }
-        
+
         user.setPassword(passwordEncoder().encode(user.getPassword()));
         this.userRepository.save(user);
     }
 
-    public List<AppUser> findAll() {
-        
+    public List<AppUser> findAll()
+    {
+
         return userRepository.findAll();
     }
 }

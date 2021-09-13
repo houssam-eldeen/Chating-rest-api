@@ -26,21 +26,17 @@ public class TokenUtil
     
     /**
      * reference: https://jwt.io/#debugger-io
-     * video: https://www.youtube.com/watch?v=5mVIpSqRKzM&list=PL_aOZuct6oApozJylbLcK5DiUl4QedvyR&index=9
      */
     private final String CLAIMS_SUBJECT = "sub";
 
     private final String CLAIMS_CREATED = "created";
 
     @Value("${auth.expiration}")
-    private Long TOKEN_VALIDITY;// = 2592000L; // in seconds
+    private Long TOKEN_VALIDITY;// = 2592000L;
 
     @Value("${auth.secret}")
     private String TOKEN_SECRET;
 
-    /*-
-     *  ** Copy Token from here     
-     */
     public String generateToken(UserDetails userDetails)
     {
 
@@ -59,7 +55,7 @@ public class TokenUtil
             .setExpiration(generateExpirationDate())
             .signWith(SignatureAlgorithm.HS256, TOKEN_SECRET).compact();
         
-        log.info("token:>>>>>>>>>>>>>>>>>> " + token);
+        log.info("token: " + token);
         
         return token;
     }

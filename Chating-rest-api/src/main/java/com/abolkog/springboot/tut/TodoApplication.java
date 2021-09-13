@@ -24,8 +24,8 @@ import com.abolkog.springboot.tut.util.FirstTimeInitializer;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
- * @author Houssam Fadel
- * @Created 08/09/2021 3:06 AM.
+ * @author Khalid Elshafie <abolkog@gmail.com>
+ * @Created 05/09/2018 3:06 AM.
  */
 @SpringBootApplication
 (
